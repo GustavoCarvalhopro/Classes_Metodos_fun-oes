@@ -29,7 +29,6 @@ class Televisao():
         if self.ligada:
             self.canal -= 1
             self.digitado= self.canal
-
     def canal_digitado(self):
         if self.ligada:
             self.digitado = input (str ('Digite o canal: ') ) 
@@ -59,3 +58,8 @@ if __name__ == '__main__':
     print ('Canal: {}' .format(televisao.digitado))
 
     print('Canal: {}' .format(televisao.canal))
+
+    televisao.diminui_canal()
+    print ('Canal: {}' .format(televisao.canal))
+
+    
